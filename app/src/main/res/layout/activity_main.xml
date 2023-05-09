@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="@string/subtitle"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/line"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/moneyAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/noOfPax" />
+
+    <EditText
+        android:id="@+id/numPayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/ServiceChg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="@string/noSvs"
+            android:textOn="@string/svs"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/Gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="ToggleButton"
+            android:textOff="@string/noGst"
+            android:textOn="@string/gst"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/line" />
+
+    <TextView
+        android:id="@+id/titleDisc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/discount" />
+
+    <EditText
+        android:id="@+id/discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/paymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cash" />
+
+            <RadioButton
+                android:id="@+id/Paynow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paynow" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/split"
+            android:textSize="20sp"
+            app:iconSize="24dp" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset"
+            android:textSize="20sp"
+            app:iconSize="24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/line" />
+
+    <TextView
+        android:id="@+id/totalAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/totalBill"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/splitPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/splitAmt"
+        android:textSize="24sp" />
+
+</LinearLayout>

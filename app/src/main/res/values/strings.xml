@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bill Please</string>
+    <string name="subtitle">Bill calculator application</string>
+    <string name="line">____________________________________________________________</string>
+    <string name="amount"> Amount ($)</string>
+    <string name="noOfPax"> No. of Pax</string>
+    <string name="svs">Service Charge</string>
+    <string name="noSvs">No Svs Charge</string>
+    <string name="gst">GST</string>
+    <string name="noGst">No GST</string>
+    <string name="discount"> Discount (%)</string>
+    <string name="cash">Cash</string>
+    <string name="paynow">Paynow</string>
+    <string name="split">SPLIT</string>
+    <string name="reset">RESET</string>
+    <string name="totalBill"> Total Bill: $</string>
+    <string name="splitAmt">Each pays : $</string>
+</resources>
